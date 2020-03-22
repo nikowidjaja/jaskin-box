@@ -1,0 +1,11 @@
+.navbar{
+    width: 100%;
+    display: flex;
+
+    &__logo{
+        img{
+            width: 50%;
+        }
+        background-color: red($color: #000000);
+    }
+}

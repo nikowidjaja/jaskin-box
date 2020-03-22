@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="958" height="261" viewBox="0 0 958 261">
+  <defs>
+    <clipPath id="clip-Logo_Jaskin">
+      <rect width="958" height="261"/>
+    </clipPath>
+  </defs>
+  <g id="Logo_Jaskin" data-name="Logo Jaskin" clip-path="url(#clip-Logo_Jaskin)">
+    <rect width="958" height="261" fill="rgba(255,255,255,0)"/>
+    <text id="JASKIN_BOX" data-name="JASKIN BOX" transform="translate(325 166)" font-size="89" font-family="AvenirLTStd-Black, Avenir LT Std" font-weight="800"><tspan x="0" y="0">JASKIN BOX</tspan></text>
+    <g id="Group_38" data-name="Group 38" transform="translate(66 78)">
+      <path id="Path_1" data-name="Path 1" d="M0,22.3V73.21l47.377,35.653V56.99Z" transform="translate(0 13.514)" fill="#020202"/>
+      <path id="Path_2" data-name="Path 2" d="M80.577,22.1V73.01L33.2,108.824V56.95Z" transform="translate(20.119 13.393)" fill="#020202"/>
+      <path id="Path_3" data-name="Path 3" d="M65.7,22.4V73.31l47.538,35.814V57.25Z" transform="translate(39.814 13.574)" fill="#020202"/>
+      <path id="Path_4" data-name="Path 4" d="M146.277,22.3V73.21L98.9,108.863V56.99Z" transform="translate(59.933 13.514)" fill="#020202"/>
+      <path id="Path_5" data-name="Path 5" d="M1.5,30.835,18.524,43.523,50.483,23.769l28.266,20.4,18.63-12.848L50,0Z" transform="translate(0.909)" fill="#020202"/>
+      <path id="Path_6" data-name="Path 6" d="M16.3,35.318,39.587,51.7,63.035,34.836,40.551,19.9Z" transform="translate(9.878 12.059)" fill="#020202"/>
+      <path id="Path_7" data-name="Path 7" d="M66.9,30.614,114.6,65.3l46.9-32.923L114.277.1Z" transform="translate(40.541 0.061)" fill="#020202"/>
+    </g>
+  </g>
+</svg>
