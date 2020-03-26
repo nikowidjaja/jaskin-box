@@ -1,0 +1,142 @@
+.home {
+  &__section {
+    @include padding-side;
+    padding-top: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    &--left {
+      flex-basis: 35%;
+      padding-top: 5vh;
+      p {
+        padding-top: 5vh;
+        width: 50%;
+      }
+    }
+    &--right {
+      flex-basis: 65%;
+      img {
+        width: 90%;
+      }
+    }
+    &--bottom {
+      width: 25%;
+      position: relative;
+      bottom: 22.5vw;
+      @media screen and (orientation: portrait) {
+        width: 100%;
+        bottom: 0;
+        padding-bottom: 5vh;
+      }
+    }
+  }
+
+  &__service {
+    @include padding-side;
+    background: white;
+    display: flex;
+
+    flex-direction: column;
+    &--top {
+      padding-top: 15vh;
+      @media screen and (orientation: portrait) {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 3vh;
+      }
+      display: flex;
+      &__title {
+        flex-basis: 30%;
+      }
+      &__text {
+        flex-basis: 50%;
+      }
+    }
+    &--bottom {
+      padding-top: 5vh;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+
+      @media screen and (orientation: portrait) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__items {
+        flex-basis: 25%;
+        p {
+          text-align: center;
+          @media screen and (orientation: portrait) {
+            padding-bottom: 2vh;
+          }
+        }
+      }
+    }
+
+    &__button {
+      margin: 10vh 0 0 80%;
+      @media screen and (orientation: portrait) {
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+  }
+  &__partnership {
+    padding-top: 15vh;
+    display: flex;
+    &--left {
+      width: 35vw;
+      padding-right: 5vw;
+      @media screen and (orientation: portrait) {
+        width: 80vw;
+      }
+    }
+
+    &--right {
+      width: 65vw;
+      padding-top: 5vh;
+    }
+
+   @include mobile-collumnizer;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__contact {
+    @include padding-side;
+    
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: row-reverse;
+    @include mobile-collumnizer;
+    
+    &--left {
+     
+      width: 20%;
+      padding-right: 10%;
+      @media screen and (orientation: portrait){
+        width: 35vw;
+        padding-right: 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+
+    &--right {
+      width: 50%;
+      @media screen and (orientation: portrait){
+        width: 80vw;
+      }
+      padding: 0 10vw 0 5vw;
+      p {
+        padding-bottom: 5vh;
+      }
+    }
+  }
+}
