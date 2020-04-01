@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import Home from '../pages/Home';
+import About from '../pages/About';
 // import ErrorBoundary from 'ErrorBoundary';
 
 const NoMatch = () => (
@@ -8,9 +9,7 @@ const NoMatch = () => (
 );
 
 class Main extends Component {
-	// componentDidMount() {
-	// 	this.props.actionsMain.data();
-	// }
+
     render() {
         return (
             <Router basename="/">
@@ -19,6 +18,7 @@ class Main extends Component {
 						{/* <ErrorBoundary> */}
 							<Switch>
 								<Route exact path="/" component={Home} />
+								<Route path="/about" component={About} />
 								<Route component={NoMatch} />
 							</Switch>
 						{/* </ErrorBoundary> */}

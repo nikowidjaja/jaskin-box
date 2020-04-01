@@ -1,12 +1,13 @@
-import React from "react";
-import Navbar from "../partial/Navbar";
+import React, { Component } from "react";
+import Navbars from "../partial/Navbar";
 import Footer from "../partial/Footer";
 
-function Home() {
+class Home extends Component {
+  render(){
   return (
     <React.Fragment>
       <div className="home">
-        <Navbar />
+        <Navbars />
         <div className="home__section">
           <div className="home__section--left">
             <h2>
@@ -76,9 +77,11 @@ function Home() {
             </div>
           </div>
 
-          <div className="home__service__button button-default">
+          {/* <div className="home__service__button button-default" onClick={()=>{
+            window.location.href = './About';
+          }}>
             See Service
-          </div>
+          </div> */}
 
           <div className="home__partnership">
             <div className="home__partnership--left">
@@ -117,6 +120,7 @@ function Home() {
       <Footer/>
     </React.Fragment>
   );
+        }
 }
 
 export default Home;

@@ -1,4 +1,5 @@
 .home {
+  background-color: #fcf0e3;
   &__section {
     @include padding-side;
     padding-top: 15vw;
@@ -117,7 +118,7 @@
     
     &--left {
      
-      width: 20%;
+      width: 40%;
       padding-right: 10%;
       @media screen and (orientation: portrait){
         width: 35vw;
@@ -129,7 +130,7 @@
     }
 
     &--right {
-      width: 50%;
+      width: 60%;
       @media screen and (orientation: portrait){
         width: 80vw;
       }

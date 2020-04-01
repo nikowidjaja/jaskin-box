@@ -1,0 +1,117 @@
+.about {
+  @include padding-side;
+  background-color: #f3c6bd;
+
+  &__top-image {
+    width: 105%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__aboutus {
+    display: flex;
+    padding-bottom: 20vh;
+    @media screen and (orientation: portrait) {
+      flex-direction: column;
+      padding-bottom: 5vh;
+    }
+    &--left {
+      width: 35%;
+      // margin-right: 15%;
+      @media screen and (orientation: portrait) {
+        width: 80vw;
+        text-align: center;
+      }
+    }
+    &--right {
+      width: 55%;
+      @media screen and (orientation: portrait) {
+        width: 80vw;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.partnership {
+  @include padding-side;
+  padding-top: 15vh;
+  display: flex;
+  @media screen and (orientation: portrait) {
+    flex-direction: column;
+  }
+  &--left {
+    width: 35vw;
+    padding-right: 5vw;
+    @media screen and (orientation: portrait) {
+      width: 80vw;
+    }
+  }
+
+  &--right {
+    width: 65vw;
+    padding-top: 5vh;
+  }
+
+  @include mobile-collumnizer;
+
+  img {
+    width: 100%;
+  }
+}
+
+.logo {
+  @include padding-side;
+  background-color: #f3c6bd;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and (orientation: portrait) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo__items {
+    padding-top: 10vh;
+    @media screen and (orientation: portrait) {
+      width: 60vw;
+      padding-top: 10vh;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.visi {
+  @include padding-side;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  display: flex;
+  @include mobile-collumnizer;
+
+  &--left {
+    @media screen and (orientation: portrait){
+      width: 80vw;
+    }
+    width: 45%;
+    padding-right:10vw;
+    img {
+      padding-top:5%;
+      width: 120%;
+      @media screen and (orientation: portrait){
+        width: 100%;
+      }
+    }
+  }
+  &--right {
+    width: 45%;
+    @media screen and (orientation: portrait){
+      width: 80vw;
+    }
+  }
+}

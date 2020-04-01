@@ -1,7 +1,5 @@
 .footer{
-    @media screen and (orientation:portrait){
-        display: none;
-    }
+   
     @include padding-side;
     margin-top:2vh;
     padding-bottom: 5vh;
@@ -9,6 +7,9 @@
     display: flex;
     &__logo{
         width: 50%;
+        @media screen and (orientation:portrait){
+         width: 100%;
+        }
         
         img{
             width: 100%;
@@ -17,6 +18,9 @@
     }
 
     &__side{
+        @media screen and (orientation:portrait){
+            display: none;
+        }
         width: 50%;
         justify-content: flex-end;
         display: flex;
