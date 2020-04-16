@@ -1,0 +1,34 @@
+.contact{
+    min-height: 90vh;
+    @include padding-side;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: #f9d9eb;
+    display: flex;
+    @include mobile-collumnizer;
+    &--left{
+        width: 90%;
+        &__email{
+            font-weight: 700;
+            margin-bottom: 5vh;
+            font-size: 3rem;
+            @media screen and (orientation:portrait) {
+                font-size: 2.5rem;
+            margin-bottom: 2vh;
+            }
+            width: 80%;
+            text-decoration: underline;
+      
+        }
+        
+    }
+    &--right{
+        @media screen and (orientation:portrait) {
+        width: 90%;
+        }
+        width: 40%;
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -10,7 +10,6 @@ export default class Footer extends Component {
         <div className="footer__side">
           <div className="footer__side__items">Home</div>
           <div className="footer__side__items">About</div>
-          <div className="footer__side__items">Service</div>
           <div className="footer__side__items">Contact</div>
         </div>
       </div>

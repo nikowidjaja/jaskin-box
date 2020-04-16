@@ -1,8 +1,11 @@
 .footer{
-   
+    @media screen and (orientation: portrait) {
+        background-color: #f7d7b5;
+      }
     @include padding-side;
-    margin-top:2vh;
-    padding-bottom: 5vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    justify-content: center;
     align-items: center;
     display: flex;
     &__logo{
@@ -14,7 +17,7 @@
         img{
             width: 100%;
         }
-        background-color: red($color: #000000);
+        
     }
 
     &__side{
@@ -23,8 +26,10 @@
         }
         width: 50%;
         justify-content: flex-end;
+        align-items: center;
         display: flex;
         &__items{
+            
             cursor: pointer;
             margin:0 2vw;
             justify-content:space-between;

@@ -14,6 +14,10 @@ class Home extends Component {
               On time delivery, <br />
               no more waiting
             </h2>
+            <p className="text-default">
+            Perusahaan kami berdiri sejak tahun 1991 yang bergerak dibidang
+            pembuatan corrugated carton box dan sheet.
+          </p>
           </div>
 
           <div className="home__section--right">
@@ -22,10 +26,7 @@ class Home extends Component {
               alt="/"
             />
           </div>
-          <p className="home__section--bottom text-default">
-            Perusahaan kami berdiri sejak tahun 1991 yang bergerak dibidang
-            pembuatan corrugated carton box dan sheet.
-          </p>
+        
         </div>
 
         {/* END OF HOME SECTION*/}

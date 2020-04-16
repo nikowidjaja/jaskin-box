@@ -37,7 +37,12 @@ class Navbars extends Component {
               >
                 About
               </NavLink>
-              <NavLink className="nav-link" to="/contact#contact">
+              <NavLink
+                className="nav-link"
+                onClick={() => {
+                  window.location.href = "./Contact";
+                }}
+              >
                 Contact
               </NavLink>
             </Nav>
