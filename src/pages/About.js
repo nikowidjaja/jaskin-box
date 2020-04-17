@@ -3,6 +3,10 @@ import Navbars from "../partial/Navbar";
 import Footer from "../partial/Footer";
 
 class About extends Component {
+  componentDidMount(){
+    document.getElementsByClassName("navbar")[0].style.backgroundColor = "#da8d7e";
+    document.getElementsByClassName("footer")[0].style.backgroundColor="#da8d7e";
+  }
   render() {
     const numbers = [2, 3, 4, 5, 6, 7, 8, 9];
     let images = numbers.map(number => {

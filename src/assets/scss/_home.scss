@@ -1,53 +1,51 @@
+@import "templates";
+
 .home {
   background-color: #fcf0e3;
-  
+
   &__section {
     @include padding-side;
     padding-top: 15vh;
     padding-bottom: 10vh;
-    @media screen and (orientation: portrait){
+    @media screen and (orientation: portrait) {
+      padding-top: 15vh;
       padding-bottom: 2vh;
+      flex-direction: column-reverse;
     }
     display: flex;
     // flex-wrap: wrap;
-    @media screen and (orientation: portrait){
-      flex-direction: column-reverse;
-      padding-top:2vh;
-    }
 
     &--left {
       flex-basis: 35%;
       padding-top: 5vh;
-      @media screen and (orientation: portrait){
+      @media screen and (orientation: portrait) {
         flex-basis: 80vw;
-        text-align:center;
+        text-align: center;
         justify-content: center;
         align-items: center;
-        h2{
-          font-size: 3rem;
+        h2 {
+          font-size: 3.7rem;
         }
       }
       p {
         padding-top: 5vh;
-        width: 50%;
-        @media screen and (orientation: portrait){
-          width: 80vw;
-          padding-top:2vh;
-          text-align:center;
+        width: 70%;
+        @media screen and (orientation: portrait) {
+          width: 100%;
+          padding-top: 2vh;
+          text-align: center;
           justify-content: center;
           align-items: center;
         }
       }
     }
     &--right {
-     
       flex-basis: 65%;
-    
+
       img {
-        width: 90%;
+        width: 100%;
       }
     }
-    
   }
 
   &__service {
@@ -61,7 +59,7 @@
       @media screen and (orientation: portrait) {
         flex-direction: column;
         text-align: center;
-        padding-top: 3vh;
+        padding-top: 7vh;
       }
       display: flex;
       &__title {
@@ -88,6 +86,7 @@
         flex-basis: 25%;
         p {
           text-align: center;
+          font-size: 2rem;
           @media screen and (orientation: portrait) {
             padding-bottom: 2vh;
           }
@@ -106,6 +105,10 @@
   &__partnership {
     padding-top: 15vh;
     padding-bottom: 10vh;
+    @media screen and (orientation: portrait) {
+      padding-top: 12vh !important; 
+      padding-bottom: 25vh;
+    }
     display: flex;
     &--left {
       width: 35vw;
@@ -120,7 +123,7 @@
       padding-top: 5vh;
     }
 
-   @include mobile-collumnizer;
+    @include mobile-collumnizer;
 
     img {
       width: 100%;
@@ -129,18 +132,21 @@
 
   &__contact {
     @include padding-side;
-    
     padding-top: 10vh;
     padding-bottom: 10vh;
     display: flex;
     flex-direction: row-reverse;
     @include mobile-collumnizer;
-    
+
+    @media screen and (orientation: portrait) {
+     padding-top: 15vh !important;
+     padding-bottom: 15vh;
+    }
+
     &--left {
-     
       width: 40%;
       padding-right: 10%;
-      @media screen and (orientation: portrait){
+      @media screen and (orientation: portrait) {
         width: 35vw;
         padding-right: 0;
       }
@@ -151,7 +157,7 @@
 
     &--right {
       width: 60%;
-      @media screen and (orientation: portrait){
+      @media screen and (orientation: portrait) {
         width: 80vw;
       }
       padding: 0 10vw 0 5vw;

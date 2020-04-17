@@ -3,6 +3,10 @@ import Navbars from "../partial/Navbar";
 import Footer from "../partial/Footer";
 
 export default class Contact extends Component {
+  componentDidMount() {
+    document.getElementsByClassName("navbar")[0].style.backgroundColor = "#e096c0";
+    document.getElementsByClassName("footer")[0].style.backgroundColor="#e096c0";
+  }
   render() {
     return (
       <React.Fragment>

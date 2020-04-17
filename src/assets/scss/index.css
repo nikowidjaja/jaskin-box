@@ -45,45 +45,8 @@ button {
   outline: none;
 }
 
-.title-default {
-  font-weight: 500;
-  font-size: 3.5rem;
-}
-
-.text-default {
-  line-height: 2rem;
-  font-size: 1.2rem;
-  padding-top: 5vh;
-}
-
-@media screen and (orientation: portrait) {
-  .text-default {
-    padding-top: 2vh;
-  }
-}
-
-.button-default {
-  border: 2px solid black;
-  text-align: center;
-  width: 12vw;
-  padding: 2.5vh 1.5vw;
-  cursor: pointer;
-}
-
-@media screen and (orientation: portrait) {
-  .button-default {
-    display: none;
-  }
-}
-
 .navbar {
   padding-left: 5vw;
-}
-
-@media screen and (orientation: portrait) {
-  .navbar {
-    background-color: #f7d7b5;
-  }
 }
 
 @media screen and (orientation: landscape) {
@@ -135,6 +98,37 @@ button {
   }
 }
 
+.title-default {
+  font-weight: 500;
+  font-size: 4.5rem;
+}
+
+.text-default {
+  line-height: 2rem;
+  font-size: 1.35rem;
+  padding-top: 5vh;
+}
+
+@media screen and (orientation: portrait) {
+  .text-default {
+    padding-top: 2vh;
+  }
+}
+
+.button-default {
+  border: 2px solid black;
+  text-align: center;
+  width: 12vw;
+  padding: 2.5vh 1.5vw;
+  cursor: pointer;
+}
+
+@media screen and (orientation: portrait) {
+  .button-default {
+    display: none;
+  }
+}
+
 .home {
   background-color: #fcf0e3;
 }
@@ -150,17 +144,12 @@ button {
 
 @media screen and (orientation: portrait) {
   .home__section {
+    padding-top: 15vh;
     padding-bottom: 2vh;
-  }
-}
-
-@media screen and (orientation: portrait) {
-  .home__section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding-top: 2vh;
   }
 }
 
@@ -183,18 +172,18 @@ button {
             align-items: center;
   }
   .home__section--left h2 {
-    font-size: 3rem;
+    font-size: 3.7rem;
   }
 }
 
 .home__section--left p {
   padding-top: 5vh;
-  width: 50%;
+  width: 70%;
 }
 
 @media screen and (orientation: portrait) {
   .home__section--left p {
-    width: 80vw;
+    width: 100%;
     padding-top: 2vh;
     text-align: center;
     -webkit-box-pack: center;
@@ -212,7 +201,7 @@ button {
 }
 
 .home__section--right img {
-  width: 90%;
+  width: 100%;
 }
 
 .home__service {
@@ -241,7 +230,7 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    padding-top: 3vh;
+    padding-top: 7vh;
   }
 }
 
@@ -292,6 +281,7 @@ button {
 
 .home__service--bottom__items p {
   text-align: center;
+  font-size: 2rem;
 }
 
 @media screen and (orientation: portrait) {
@@ -317,6 +307,13 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (orientation: portrait) {
+  .home__partnership {
+    padding-top: 12vh !important;
+    padding-bottom: 25vh;
+  }
 }
 
 .home__partnership--left {
@@ -383,6 +380,13 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 3vh;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .home__contact {
+    padding-top: 15vh !important;
+    padding-bottom: 15vh;
   }
 }
 
@@ -484,6 +488,13 @@ button {
   background-color: #f3c6bd;
 }
 
+@media screen and (orientation: portrait) {
+  .about {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+}
+
 .about__top-image {
   width: 105%;
 }
@@ -501,6 +512,7 @@ button {
 
 @media screen and (orientation: portrait) {
   .about__aboutus {
+    padding-top: 5vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -515,7 +527,7 @@ button {
 
 @media screen and (orientation: portrait) {
   .about__aboutus--left {
-    width: 80vw;
+    width: 100%;
     text-align: center;
   }
 }
@@ -526,7 +538,7 @@ button {
 
 @media screen and (orientation: portrait) {
   .about__aboutus--right {
-    width: 80vw;
+    width: 100%;
     text-align: center;
   }
 }
@@ -545,6 +557,8 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 10vh !important;
+    padding-bottom: 10vh;
   }
 }
 
@@ -663,7 +677,8 @@ button {
 
 @media screen and (orientation: portrait) {
   .visi--left {
-    width: 80vw;
+    width: 100%;
+    padding-right: 0;
   }
 }
 
@@ -747,5 +762,36 @@ button {
 
 .contact--right img {
   width: 100%;
+}
+
+.title-default {
+  font-weight: 500;
+  font-size: 4.5rem;
+}
+
+.text-default {
+  line-height: 2rem;
+  font-size: 1.35rem;
+  padding-top: 5vh;
+}
+
+@media screen and (orientation: portrait) {
+  .text-default {
+    padding-top: 2vh;
+  }
+}
+
+.button-default {
+  border: 2px solid black;
+  text-align: center;
+  width: 12vw;
+  padding: 2.5vh 1.5vw;
+  cursor: pointer;
+}
+
+@media screen and (orientation: portrait) {
+  .button-default {
+    display: none;
+  }
 }
 /*# sourceMappingURL=index.css.map */

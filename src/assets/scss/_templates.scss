@@ -1,0 +1,40 @@
+.title-default {
+  font-weight: 500;
+  font-size: 4.5rem;
+}
+.text-default {
+  line-height: 2rem;
+  font-size: 1.35rem;
+  padding-top: 5vh;
+  @media screen and (orientation: portrait) {
+    padding-top: 2vh;
+  }
+}
+
+.button-default {
+  border: 2px solid black;
+  text-align: center;
+  width: 12vw;
+  padding: 2.5vh 1.5vw;
+  cursor: pointer;
+  @media screen and (orientation: portrait) {
+    // width: 60%;
+    // margin: 0 auto;
+    display: none;
+  }
+}
+
+@mixin padding-side {
+  padding: 0 5vw;
+}
+
+@mixin mobile-collumnizer {
+  @media screen and (orientation: portrait) {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3vh;
+  }
+}
+

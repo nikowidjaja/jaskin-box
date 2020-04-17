@@ -3,7 +3,12 @@ import Navbars from "../partial/Navbar";
 import Footer from "../partial/Footer";
 
 class Home extends Component {
+  componentDidMount(){
+    document.getElementsByClassName("navbar")[0].style.backgroundColor="#f7d7b5";
+    document.getElementsByClassName("footer")[0].style.backgroundColor="#f7d7b5";
+  }
   render(){
+    
   return (
     <React.Fragment>
       <div className="home">

@@ -6,7 +6,12 @@ import withRouter from "react-router-dom/withRouter";
 
 class Navbars extends Component {
   render() {
-    const match = window.location.pathname === "/";
+
+    //CHANGE THIS ASAP
+    const match1 = window.location.pathname === "/";
+    const match2 = window.location.pathname === "/About";
+    const match3 = window.location.pathname === "/Contact";
+
     return (
       <React.Fragment>
         <Navbar sticky="top" collapseOnSelect expand="sm" className="navbar">
@@ -21,7 +26,7 @@ class Navbars extends Component {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="nav-items">
               <NavLink
-                className={`nav-link ${match ? "active" : ""}`}
+                className={`nav-link ${match1 ? "active" : ""}`}
                 activeClassName={"on"}
                 onClick={() => {
                   window.location.href = "./";
@@ -30,7 +35,9 @@ class Navbars extends Component {
                 Home
               </NavLink>
               <NavLink
-                className="nav-link"
+                // className="nav-link"
+                className={`nav-link ${match2 ? "active" : ""}`}
+
                 onClick={() => {
                   window.location.href = "./About";
                 }}
@@ -38,7 +45,9 @@ class Navbars extends Component {
                 About
               </NavLink>
               <NavLink
-                className="nav-link"
+                // className="nav-link"
+                className={`nav-link ${match3 ? "active" : ""}`}
+
                 onClick={() => {
                   window.location.href = "./Contact";
                 }}
