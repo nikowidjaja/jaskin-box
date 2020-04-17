@@ -12,11 +12,13 @@
             font-weight: 700;
             margin-bottom: 5vh;
             font-size: 3rem;
+         
+            width: 80%;
             @media screen and (orientation:portrait) {
                 font-size: 2.5rem;
             margin-bottom: 2vh;
+            width: 100%;
             }
-            width: 80%;
             text-decoration: underline;
       
         }
