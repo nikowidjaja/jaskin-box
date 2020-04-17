@@ -1,6 +1,5 @@
 .navbar {
   padding-left: 5vw;
-
   @media screen and (orientation: landscape) {
     position: static;
   }
@@ -23,10 +22,10 @@
 .navbar-brand {
   width: 20%;
   margin-right: 30%;
-  @media screen and (orientation: portrait){
+  @media screen and (orientation: portrait) {
     width: 50%;
   }
-  img{
+  img {
     width: 100%;
   }
 }

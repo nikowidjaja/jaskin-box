@@ -156,11 +156,11 @@ button {
 .home__section--left {
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
-  padding-top: 5vh;
 }
 
 @media screen and (orientation: portrait) {
   .home__section--left {
+    padding-top: 5vh;
     -ms-flex-preferred-size: 80vw;
         flex-basis: 80vw;
     text-align: center;
@@ -192,6 +192,20 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+.home__section--left__shortcut {
+  padding-top: 8vh;
+  position: relative;
+  left: 7vw;
+  cursor: pointer;
+}
+
+@media screen and (orientation: portrait) {
+  .home__section--left__shortcut {
+    text-align: center;
+    left: 0;
   }
 }
 
@@ -421,6 +435,20 @@ button {
   padding-bottom: 5vh;
 }
 
+.home__backtop {
+  display: none;
+  width: 10vh;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: fixed;
+  bottom: 10vh;
+  right: 2vw;
+}
+
+.home__backtop img {
+  width: 100%;
+}
+
 .footer {
   padding: 0 5vw;
   padding-top: 3vh;
@@ -481,6 +509,10 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer__side__items:hover {
+  font-weight: 600;
 }
 
 .about {

@@ -17,8 +17,8 @@
 
     &--left {
       flex-basis: 35%;
-      padding-top: 5vh;
       @media screen and (orientation: portrait) {
+        padding-top: 5vh;
         flex-basis: 80vw;
         text-align: center;
         justify-content: center;
@@ -37,6 +37,17 @@
           justify-content: center;
           align-items: center;
         }
+      }
+
+      &__shortcut {
+        padding-top: 8vh;
+        position: relative;
+        left: 7vw;
+        @media screen and (orientation: portrait) {
+          text-align: center;
+          left: 0;
+        }
+        cursor: pointer;
       }
     }
     &--right {
@@ -106,7 +117,7 @@
     padding-top: 15vh;
     padding-bottom: 10vh;
     @media screen and (orientation: portrait) {
-      padding-top: 12vh !important; 
+      padding-top: 12vh !important;
       padding-bottom: 25vh;
     }
     display: flex;
@@ -139,8 +150,8 @@
     @include mobile-collumnizer;
 
     @media screen and (orientation: portrait) {
-     padding-top: 15vh !important;
-     padding-bottom: 15vh;
+      padding-top: 15vh !important;
+      padding-bottom: 15vh;
     }
 
     &--left {
@@ -165,5 +176,19 @@
         padding-bottom: 5vh;
       }
     }
+  }
+
+  &__backtop {
+    display: none;
+    width: 10vh;
+    // box-shadow: 10px 10px 10px black;
+    transform: rotate(180deg);
+    position: fixed;
+    bottom: 10vh;
+    right: 2vw;
+    img {
+      width: 100%;
+    }
+    
   }
 }
