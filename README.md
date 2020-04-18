@@ -1,11 +1,9 @@
-**JASKIN BOX**
+##  Jaskin-Box
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-**LIVE URL**
+### LIVE URL
 https://jaskin-box.herokuapp.com/
 
-**MADE BY**
+## CREATOR
 <br/>
 Niko Pratama Wahjudi Widjaja
 <br/>
